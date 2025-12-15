@@ -150,6 +150,26 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
+        .journal-pdf-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #111;
+            background: #48C774;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(72, 199, 116, 0.4);
+            transition: all 0.35s ease;
+            animation: pulseGlow 2.5s infinite;
+        }
+
+        .journal-pdf-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(72, 199, 116, 0.7);
+            color: #000;
+        }
+
         footer {
             background-color: #111;
             padding: 20px;
@@ -167,6 +187,17 @@
 
         footer a:hover {
             color: #48C774;
+        }
+                @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 0 rgba(72, 199, 116, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(72, 199, 116, 0.9);
+            }
+            100% {
+                box-shadow: 0 0 0 rgba(72, 199, 116, 0.6);
+            }
         }
 
         @media (max-width: 768px) {
@@ -230,7 +261,7 @@
     <div class="hero-section" id="home">
         <div>
             <h1>Marvin Paul Saytas</h1>
-            <p>A Web UI/UX Designer</p>
+            <p>A Front-End Developer </p>
         </div>
     </div>
 
@@ -239,6 +270,16 @@
         <div class="container">
             <h2>MY CEBU-BOHOL TOUR JOURNEY</h2>
             <div class="row">
+
+                <div class="text-center mb-5" data-aos="zoom-in">
+                    <a 
+                        href="SAYTAS ANSWER ON JOURNAL.pdf" 
+                        target="_blank" 
+                        class="journal-pdf-btn"
+                    >
+                        View Full Journal (PDF)
+                    </a>
+                </div>
 
                 <div class="col-md-4 journal-item" data-aos="fade-up">
                     <img src="images/UPCEBU3.jpg" alt="UP-CEBU">
